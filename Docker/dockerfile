@@ -1,0 +1,15 @@
+# Use an official Ubuntu runtime as a parent image
+FROM ubuntu:latest
+
+# Install necessary packages
+RUN apt-get update && \
+    apt-get install -y \
+    docker.io \
+    && rm -rf /var/lib/apt/lists/*
+
+# Pull the required images
+RUN docker pull oxsecurity/megalinter:latest
+RUN docker pull infracost/infracost:latest
+RUN docker pull terraform-docs/terraform-docs:latest
+
+# Your Docker image is ready!
