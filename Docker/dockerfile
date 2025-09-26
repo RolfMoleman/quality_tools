@@ -1,5 +1,5 @@
 # Use an official Ubuntu runtime as a parent image
-FROM ubuntu:latest
+FROM ubuntu:24.10
 
 # Install necessary packages
 RUN apt-get update && \
