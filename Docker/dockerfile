@@ -1,5 +1,5 @@
 # Use an official Ubuntu runtime as a parent image
-FROM ubuntu:24.10
+FROM ubuntu:oracular-20250619
 
 # Install necessary packages
 RUN apt-get update && \
